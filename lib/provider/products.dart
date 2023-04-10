@@ -1,4 +1,4 @@
-import 'package:anag_shop/models/product.dart';
+import 'package:anag_shop/provider/product.dart';
 import 'package:flutter/material.dart';
 
 class Products with ChangeNotifier{
@@ -38,7 +38,9 @@ List<Product> _items =[Product(
 List<Product> get items {
   return [..._items];
 }
-
+Product findById(String id){
+  return _items.firstWhere((prod) => prod.id == id);
+}
 void addProduct(){
  // _items.add(value);
   notifyListeners();
