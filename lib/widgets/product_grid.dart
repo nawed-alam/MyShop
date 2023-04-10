@@ -14,8 +14,8 @@ final products = productData.items;
     return GridView.builder(
       padding: const EdgeInsets.all(10.0),
       itemCount: products.length,
-      itemBuilder: (ctx, i) =>ChangeNotifierProvider(
-        create: (context) => products[i],
+      itemBuilder: (ctx, i) =>ChangeNotifierProvider.value(
+      value: products[i],
         child:ProductItem(
         // products[i].id,
         // products[i].title,

@@ -6,7 +6,7 @@ import '../provider/product.dart';
 class ProductItem extends StatelessWidget {
   // final String id;
   // final String title;
-  // final String imageUrl;
+  // final String imageUrl; 
 
   // ProductItem(this.id,this.title,this.imageUrl);
 
